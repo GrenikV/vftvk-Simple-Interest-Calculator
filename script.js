@@ -1,5 +1,4 @@
-function compute()
-{
+function compute(){
         //Things that are
         var p = document.getElementById("principal")
         var principal = document.getElementById("principal").value;
@@ -9,18 +8,16 @@ function compute()
         var year = new Date().getFullYear()+parseInt(years);
 
         // Things that happen
-        if (principal<=0)
-        {
-            alert{"Enter a positive number"};
-            p.focus();
+        if(principal<=0){
+        alert("Enter a postitive number");
+        p.focus();
         }
         else{
             document.getElementById("result").innerHTML="If you deposit <mark>"+principal+"</mark>,\<br\>at an interest rate of <mark>"+rate+"</mark>%\<br\>You will receive an amount of <Mark>"+amount+"</mark>,\<br\>in the year <mark>"+year+"</mark>\<br\>";
         }
     
     }
- function updateRate() 
-    {
+ function updateRate(){
         var rateval = document.getElementById("rate").value;
         document.getElementById("rate_val").innerText=rateval;
     }
