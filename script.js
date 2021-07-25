@@ -1,7 +1,7 @@
 function compute()
-    {
+{
         //Things that are
-        var p = document.getElementById("principal");
+        var p = document.getElementById("principal")
         var principal = document.getElementById("principal").value;
         var rate = document.getElementById("rate").value;
         var years = document.getElementById("years").value;
